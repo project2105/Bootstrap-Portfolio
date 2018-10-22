@@ -30,3 +30,11 @@ h1 {
 .pagination {
   margin-bottom: 30px;
 }
+
+.btn {
+  background-color: #203c5d;
+}
+
+a, .page-link {
+  color: #203c5d;
+}
