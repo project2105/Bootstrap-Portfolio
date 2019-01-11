@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Portrait Gifs</title>
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="css/2-col-portfolio.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+
+  <script>
+    function refresh() {
+      var img = document.getElementById("gif");
+      img.src = "assets/Portraits-of-Pablo.gif";
+      return false;
+    }
+    function refresh2() {
+      var img = document.getElementById("gif2");
+      img.src = "assets/Portraits-of-Vincent.gif";
+      return false;
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Paul F. Jensen</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="portfolioCoding.html" id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Portfolio
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="portfolioCoding.html">Portfolio - Coding</a>
+              <a class="dropdown-item" href="portfolioDesign.html">Portfolio - Design</a>
+              <a class="dropdown-item" href="portfolioPhotoshop.html">Portfolio - Photoshop</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resume.html">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container animated slideInDown">
+
+    <h1 class="my-4">Gifs of Portraits</h1>
+
+    <div class="row">
+      <div class="col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <img class="card-img-top" id="gif" src="assets/Portraits-of-Pablo.gif" alt="Pablo Gif">
+          <button id="clickme" onclick="refresh();">Restart</button>
+          <div class="card-body">
+            <h4 class="card-title">
+              Pablo Picasso
+            </h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <img class="card-img-top" id="gif2" src="assets/Portraits-of-Vincent.gif" alt="Vincent Gif">
+          <button id="clickme" onclick="refresh2();">Restart</button>
+          <div class="card-body">
+            <h4 class="card-title">
+              Vincent VanGogh
+            </h4>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href="portfolioPhotoshop.html">Back to Portfolio</a>
+      </li>
+    </ul>
+
+  </div>
+
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Paul F. Jensen 2018</p>
+    </div>
+  </footer>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
